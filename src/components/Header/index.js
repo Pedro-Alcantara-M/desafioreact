@@ -3,7 +3,7 @@ import './styles.css';
 
 function Header() {
   return (
-    <nav className="navbar navbar-react fixed-top flex-md-nowrap bg-react">
+    <nav className="navbar-react">
       <div className="navbar-item-1">
         <img src={react} className="logo-react" alt="react" />
       </div>

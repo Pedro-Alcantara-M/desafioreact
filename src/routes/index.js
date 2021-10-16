@@ -1,10 +1,15 @@
 import Home from '../pages/Home';
+import { Switch, Route } from "react-router-dom"
 
-const appRoutes =  [
-    {
-        component: Home,
-        path: '/',
-    }
-];
+const AppRoutes = () => {
+    return(
+    <Switch>
+        <Route exact path="/">
+            <Home/>
+        </Route>
+    </Switch>
+    )
+}
 
-export default appRoutes
+export default AppRoutes
+

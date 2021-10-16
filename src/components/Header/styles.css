@@ -1,24 +1,29 @@
 .navbar-react {
   background-color: #007acc;
-  padding: 0;
   display: grid;
   color: #fff;
-  grid-template-columns: 4vw 65vw 22vw 9vw;
+  height: 65px;
+  grid-template-columns: 4vw 70vw 22vw 9vw;
   align-items: center;
-  max-height: fit-content;
+  box-sizing: border-box;
 }
 
 .logo-react {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 60px;
+  height: 58.33px;
+  margin: 0px 16px;
+  transform: translateY(2px);
+  box-sizing: border-box;
 }
 
 .navbar-item-1 {
   grid-column: 1 / 2;
+  box-sizing: border-box;
 }
 
 .navbar-item-2 {
+  box-sizing: border-box;
   grid-column: 2 / 2;
   display: flex;
-  padding-left: 2rem;
+  padding-left: 3rem;
 }

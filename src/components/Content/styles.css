@@ -1,0 +1,88 @@
+.content{
+    background: #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 16px 16px;
+    border: 0.5px solid #B7B7B7;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .content-label{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 16px;
+  }
+
+  table, th, td {
+    border: 0.5px solid #DDDDDD;
+    border-collapse: collapse;
+  }
+  
+  table{
+    width: 100%;
+    padding: 0;
+    border-radius: 5px;
+    background: #FFFFFF;
+  }
+
+  th, td{
+    padding: 11px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  th{
+   background-color: #F0F0F0;
+    font-weight: 700;
+  }
+
+  .data-rows{
+    text-align: center;
+  }
+
+  .check-column{
+    width: 51px;
+    transform: translateX(7px);
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  input + label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 30px;
+  }
+
+  input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 0;
+    bottom: 0;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    z-index: 10;
+  }
+
+  input[type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    left: 1px;
+    box-sizing: border-box;
+    bottom: 1px;
+    width: 13px;
+    height: 13px;
+    background-color: #C4C4C4;
+  }
+
+  

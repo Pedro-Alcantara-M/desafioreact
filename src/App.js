@@ -1,26 +1,15 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import { BrowserRouter as Router } from "react-router-dom"
 import AppRoutes from "./routes"
+import { StateProvider } from './context/state'
+import { initialState, reducer } from './context/reducer'
 
 const App = () => {
   return (
-    <Router>
-      <Switch>
-
-        {AppRoutes.map((route, key) => {
-        const { component, path } = route;
-        const Component = component;
-
-        return (
-          <Route
-            exact={true}
-            path={path}
-            key={key}
-            render={Component}
-          />
-        )
-      })}
-      </Switch>
-    </Router>
+    <StateProvider initialState={initialState} reducer={reducer}>
+      <Router>
+        <AppRoutes/>
+      </Router>
+    </StateProvider>
   )
 }
 
