@@ -1,5 +1,5 @@
 const initialState = {
-  data: []
+  servers: []
 }
 
 const reducer = (state, action) => {
